@@ -5,7 +5,8 @@ import Article from "./article";
 function App() {
   return (
     <div className="App">
-      <Article title={"React入門"} contents={"propsについて"} />
+      <Article title={"React入門1"} contents={"propsについて"} />
+      <Article title={"React入門2"} contents={"propsむずかし、"} />
     </div>
   );
 }
