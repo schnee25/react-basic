@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Content, Title, PublishButton } from "./index"; // 名前付きインポート
+import { Content, Title, PublishButton, TextInput } from "./index"; // 名前付きインポート
 
 const Article = (props) => {
   const [isPublished, setIsPublished] = useState(false);
@@ -20,6 +20,8 @@ const Article = (props) => {
       onClick={publishArticle()}
       はダメ (無限レンダリングが起きるから)
       */}
+      <br />
+      <TextInput />
     </div>
   );
 };
