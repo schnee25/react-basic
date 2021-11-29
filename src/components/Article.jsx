@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Content, Title, PublishButton, TextInput } from "./index"; // 名前付きインポート
+import { Content, Title, PublishButton, TextInput, Counter, BadCounter } from "./index"; // 名前付きインポート
 
 const Article = (props) => {
   const [isPublished, setIsPublished] = useState(false);
@@ -22,6 +22,8 @@ const Article = (props) => {
       */}
       <br />
       <TextInput />
+      <Counter />
+      <BadCounter />
     </div>
   );
 };
