@@ -1,13 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Article from "./article";
+import Article from "./components/Article";
 
 function App() {
   return (
     <div className="App">
-      <Article title={"React入門1"} contents={"propsについて"} />
-      <Article title={"React入門2"} contents={"propsむずかし、"} />
+      <Article title={"React入門1"} content={"propsについて"} />
     </div>
   );
 }

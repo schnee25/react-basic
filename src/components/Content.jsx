@@ -1,7 +1,7 @@
 import React from "react";
 
-const Contents = (props) => {
+const Content = (props) => {
   return <p>{props.content}</p>;
 };
 
-export default Contents;
+export default Content;
