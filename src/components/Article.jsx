@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Content, Title, PublishButton, TextInput, Counter, BadCounter } from "./index"; // 名前付きインポート
+import {
+  Content,
+  Title,
+  PublishButton,
+  TextInput,
+  Counter,
+  BadCounter,
+  ToggleButton,
+} from "./index"; // 名前付きインポート
 
 const Article = (props) => {
   const [isPublished, setIsPublished] = useState(false);
@@ -12,6 +20,7 @@ const Article = (props) => {
       {" "}
       <Title title={props.title} />
       <Content content={props.content} />
+      <br />
       <PublishButton isPublished={isPublished} onClick={publishArticle} />
       {/* 
       onClick={publishArticle}
@@ -22,8 +31,12 @@ const Article = (props) => {
       */}
       <br />
       <TextInput />
+      <br />
       <Counter />
+      <br />
       <BadCounter />
+      <br />
+      <ToggleButton />
     </div>
   );
 };
